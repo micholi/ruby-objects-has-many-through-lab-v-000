@@ -18,7 +18,7 @@ attr_accessor :name, :genre, :artist
 
   def artist
     # belongs to a artist
-    self.artist = artist
+    #self.artist = artist
   end
 
 
