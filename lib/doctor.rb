@@ -20,7 +20,7 @@ attr_accessor :name
 
   def patients
     # has many patients, through appointments
-    self.appointments.collect do |appointment|
+    @appointments.collect do |appointment|
       appointment.patient
     end
   end
