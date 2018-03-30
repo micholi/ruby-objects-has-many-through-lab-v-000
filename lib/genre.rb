@@ -14,7 +14,7 @@ attr_accessor :name, :songs
 
   def artists
     # has many artists, through songs
-    songs.collect do |song|
+    @songs.collect do |song|
       song.artist
     end
   end
