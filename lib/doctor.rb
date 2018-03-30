@@ -7,9 +7,11 @@ attr_accessor :name, :appointments
     @appointments = []
   end
 
-  def add_appointment
+  def add_appointment(appointment)
     # adds a new appointment to the doctor's @appointments array
     # and tells that appointment that it belongs to the docts
+    @appointments << appointment
+    doctor.appointment = self
 
   end
 
