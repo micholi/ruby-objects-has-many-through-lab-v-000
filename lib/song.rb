@@ -13,12 +13,12 @@ attr_accessor :name, :genre, :artist
     #genre.add_song(self)
     #genre.add_song(self)
     #self.genre = genre
-    self.genre = genre
+    #self.genre = genre
   end
 
   def artist
     # belongs to a artist
-    self.artist = artist
+    #self.artist = artist
   end
 
 
