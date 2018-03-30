@@ -9,18 +9,11 @@ attr_accessor :name, :genre, :artist
   end
 
   def genre
-    # belongs to a genre
-    #genre.add_song(self)
-    #genre.add_song(self)
-    #self.genre = genre
-    #self.genre = genre
-
+    self.genre = genre
   end
 
   def artist
-    # belongs to a artist
-    #self.artist = artist
+    self.artist = artist
   end
-
 
 end
