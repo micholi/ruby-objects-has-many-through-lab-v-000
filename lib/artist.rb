@@ -18,7 +18,7 @@ attr_accessor :name
 
   def genres
     #has many genres, through songs
-    songs.collect do |song|
+    @songs.collect do |song|
       song.genre
     end
   end
