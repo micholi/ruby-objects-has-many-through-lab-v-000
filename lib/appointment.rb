@@ -7,13 +7,13 @@ attr_accessor :date, :doctor
     @doctor = doctor
   end
 
-  def patient
-    # belongs to a patient
+#  attr_accessor :name, :genre, :artist
 
-  end
-
-  def doctor
-    # belongs to a doctor
+#    def initialize(name, genre)
+#      @name = name
+#      @genre = genre
+#      genre.add_song(self)
+#    end
 
   end
 
