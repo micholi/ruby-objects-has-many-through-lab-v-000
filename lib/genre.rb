@@ -12,6 +12,10 @@ attr_accessor :name, :songs
     @songs
   end
 
+  def add_songs(song)
+    @songs << song
+  end
+  
   def artists
     # has many artists, through songs
     @songs.collect do |song|
