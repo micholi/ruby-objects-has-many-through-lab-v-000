@@ -9,11 +9,16 @@ attr_accessor :name
 
   def songs
     # has many songs
+    @songs
+  end
 
   end
 
   def artists
     # has many artists, through songs
+    @songs.collect.do |song|
+      song.artist
+  end
   end
 
 
