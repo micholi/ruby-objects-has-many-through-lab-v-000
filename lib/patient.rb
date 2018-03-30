@@ -11,6 +11,7 @@ attr_accessor :name
     # takes in an argument of an apppointment and adds that appointment to it's
     # list of appointments and tells that appointment it belongs to the patient
     @appointments << appointment
+    appointment.patient = self
   end
 
   def doctors
