@@ -12,7 +12,6 @@ attr_accessor :name, :appointments
     # and tells that appointment that it belongs to the docts
     @appointments << appointment
     doctor.appointment = self
-
   end
 
   def appointments
@@ -21,7 +20,9 @@ attr_accessor :name, :appointments
 
   def patients
     # has many patients, through appointments
-    
+    self.appointments.collect do |appointment|
+      appointment.patient
+    end
   end
 
 end
