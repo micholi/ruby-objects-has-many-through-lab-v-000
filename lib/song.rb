@@ -13,7 +13,7 @@ attr_accessor :name, :genre, :artist
     #genre.add_song(self)
     #genre.add_song(self)
     #self.genre = genre
-    #self.genre = genre
+    self.genre 
   end
 
   def artist
