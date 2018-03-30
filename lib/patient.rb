@@ -8,8 +8,6 @@ attr_accessor :name
   end
 
   def add_appointment(appointment)
-    # takes in an argument of an apppointment and adds that appointment to it's
-    # list of appointments and tells that appointment it belongs to the patient
     @appointments << appointment
     appointment.patient = self
   end
@@ -19,7 +17,6 @@ attr_accessor :name
   end
 
   def doctors
-    # has many doctors through appointments
     @appointments.collect do |appointment|
       appointment.doctor
     end
