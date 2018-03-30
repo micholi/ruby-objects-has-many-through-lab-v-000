@@ -14,6 +14,10 @@ attr_accessor :name
     appointment.patient = self
   end
 
+  def appointments
+    @appointments
+  end
+
   def doctors
     # has many doctors through appointments
     @appointments.collect do |appointment|
