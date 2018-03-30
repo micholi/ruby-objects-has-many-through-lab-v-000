@@ -8,7 +8,6 @@ attr_accessor :name
   end
 
   def songs
-    # has many songs
     @songs
   end
 
